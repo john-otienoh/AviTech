@@ -25,9 +25,14 @@ SECRET_KEY = 'django-insecure-62zc8bj4pv_l+8*+x+40j@(dbl2_bf-0move=9h_*xe=-&!*p#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['7cc8-2c0f-fe38-2114-d033-e98b-aebf-f91e-328e.ngrok-free.app', '127.0.0.1']
 
+# WhatsApp API settings
+WHATSAPP_API_TOKEN = 'Bearer EAAI7KQfphY0BOyk7iC75EgOrIUyld2m3KZAZChksJVDyus9KjjJzyuxp5ysA17y86nU2ovSfxZAVEZBucY9mWHvfgD8qjObmEsoiPICmdIiOZB5GQ1vDJwnC70E9CYE97rPS0EPrZCYQjrENeiObjJSxGBXPqUgtvz0FFyOOSqLwJVRBVi7vj4xe5kQQFQvsEl3h22cDmZBrUiwoPZADyL1uty8PC8RdTbUcKhx3p5xdexYZD'
 
+VERIFY_TOKEN = 'koechbot'
+
+PHONE_NUMBER_ID = '107082732389411'
 # Application definition
 
 INSTALLED_APPS = [
