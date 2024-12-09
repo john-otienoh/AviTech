@@ -1,0 +1,646 @@
+[
+  {
+    "aircraft_name": "Cessna 172 Skyhawk",
+    "max_pax": 4,
+    "purchase_price": 350000,
+    "hire_price_per_hour": 250,
+    "aircraft_image_url": "https://media.istockphoto.com/id/1170727452/photo/cessna-172s-skyhawk-sp-airplane.jpg?s=612x612&w=0&k=20&c=L6u72X8rPYd-B3FBaBKzA1fuehtDOjDVLm_P2mk4JH4="
+  },
+  {
+    "aircraft_name": "Piper PA-28 Cherokee",
+    "max_pax": 4,
+    "purchase_price": 400000,
+    "hire_price_per_hour": 300,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/pa-28/pa-28-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft Bonanza",
+    "max_pax": 6,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 450,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/bonanza/beechcraft-bonanza-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 206 Turbo Stationair",
+    "max_pax": 8,
+    "purchase_price": 900000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/206/cessna-206-turbo-stationair-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Pilatus PC-12",
+    "max_pax": 9,
+    "purchase_price": 3500000,
+    "hire_price_per_hour": 1500,
+    "aircraft_image_url": "https://www.pilatus-aircraft.com/en/aircraft/pc-12/pc-12-ngx/images/pc-12-ngx-exterior-main.jpg"
+  },
+  {
+    "aircraft_name": "Cirrus SR22",
+    "max_pax": 4,
+    "purchase_price": 550000,
+    "hire_price_per_hour": 350,
+    "aircraft_image_url": "https://www.cirrusaircraft.com/content/dam/cirrus/aircraft/sr22/sr22-exterior-day.jpg"
+  },
+  {
+    "aircraft_name": "Diamond DA40 Star",
+    "max_pax": 4,
+    "purchase_price": 450000,
+    "hire_price_per_hour": 320,
+    "aircraft_image_url": "https://www.diamondair.com/media/images/DA40_STAR.jpg"
+  },
+  {
+    "aircraft_name": "Mooney M20 Acclaim",
+    "max_pax": 4,
+    "purchase_price": 700000,
+    "hire_price_per_hour": 400,
+    "aircraft_image_url": "https://www.mooney.com/content/dam/mooney/images/aircraft/m20-acclaim/mooney-m20-acclaim-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Socata TBM 700",
+    "max_pax": 6,
+    "purchase_price": 3000000,
+    "hire_price_per_hour": 1200,
+    "aircraft_image_url": "https://www.dassault-aviation.com/en/aircraft/business-jets/tbm/tbm-940/media/gallery/images/tbm-940-exterior-3.jpg"
+  },
+  {
+    "aircraft_name": "Piper Meridian",
+    "max_pax": 7,
+    "purchase_ price": 2500000,
+    "hire_price_per_hour": 1000,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/meridian/meridian-exterior.jpg"
+  },
+  {
+    "aircraft_name": "King Air 200",
+    "max_pax": 8,
+    "purchase_price": 4000000,
+    "hire_price_per_hour": 1800,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/king-air-200/king-air-200-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 400 Series",
+    "max_pax": 4,
+    "purchase_price": 500000,
+    "hire_price_per_hour": 350,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/400/cessna-400-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft Baron",
+    "max_pax": 6,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/baron/baron-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna Citation Mustang",
+    "max_pax": 4,
+    "purchase_price": 3000000,
+    "hire_price_per_hour": 2000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-mustang/citation-mustang-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer Phenom 100",
+    "max_pax": 4,
+    "purchase_price": 4000000,
+    "hire_price_per_hour": 2200,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/aircraft/phenom-100/phenom-100-exterior.jpg"
+  },
+  {
+    "aircraft_name": "HondaJet",
+    "max_pax": 6,
+    "purchase_price": 5000000,
+    "hire_price_per_hour": 2500,
+    "aircraft_image_url": "https://www.hondajet.com/content/dam/hondajet/images/aircraft/hondajet-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna Citation CJ3",
+    "max_pax": 6,
+    "purchase_price": 5000000,
+    "hire_price_per_hour": 2400,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-cj3/citation-cj3-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Navajo Chieftain",
+    "max_pax": 9,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 700,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/navajo-chieftain/navajo-chieftain-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft 1900D",
+    "max_pax": 19,
+    "purchase_price": 3000000,
+    "hire_price_per_hour": 1200,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/1900d/1900d-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna Citation XLS",
+    "max_pax": 8,
+    "purchase_price": 7000000,
+    "hire_price_per_hour": 3000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-xls/citation-xls-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Gulfstream G150",
+    "max_pax": 7,
+    "purchase_price": 8000000,
+    "hire_price_per_hour": 3500,
+    "aircraft_image_url": "https://www.gulfstream.com/content/dam/gulfstream/images/aircraft/g150/g150-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Learjet 75",
+    "max_pax": 8,
+    "purchase_price": 9000000,
+    "hire_price_per_hour": 4000,
+    "aircraft_image_url": "https://www.leonardo.com/content/dam/leonardo/images/aircraft/learjet-75/learjet-75-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Pilatus PC-24",
+    "max_pax": 8,
+    "purchase_price": 10000000,
+    "hire_price_per_hour": 4500,
+    "aircraft_image_url": "https://www.pilatus-aircraft.com/en/aircraft/pc-24/pc-24/images/pc-24-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Bombardier Challenger 350",
+    "max_pax": 10,
+    "purchase_price": 12000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.bombardier.com/content/dam/brands/bombardier/images/aircraft/challenger-350/challenger-350-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer Legacy 450",
+    "max_pax": 8,
+    "purchase_price": 11000000,
+    "hire_price_per_hour": 4800,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/aircraft/legacy-450/legacy-450-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Dassault Falcon 2000",
+    "max_pax": 10,
+    "purchase_price": 15000000,
+    "hire_price_per_hour": 6000,
+    "aircraft_image_url": "https://www.dassault-aviation.com/en/aircraft/business-jets/falcon-2000/media/gallery/images/falcon-2000-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Gulfstream G280",
+    "max_pax": 10,
+    "purchase_price": 15000000,
+    "hire_price_per_hour": 6500,
+    "aircraft_image_url": "https://www.gulfstream.com/content/dam/gulfstream/images/aircraft/g280/g280-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna Citation Latitude",
+    "max_pax": 9,
+    "purchase_price": 16000000,
+    "hire_price_per_hour": 7000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-latitude/citation-latitude-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Bombardier Global 6000",
+    "max_pax": 14,
+    "purchase_price": 60000000,
+    "hire_price_per_hour": 8000,
+    "aircraft_image_url": "https://www.bombardier.com/content/dam/brands/bombardier/images/aircraft/global-6000/global-6000-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Dassault Falcon 7X",
+    "max_pax": 14,
+    "purchase_price": 50000000,
+    "hire_price_per_hour": 7500,
+    "aircraft_image_url": "https://www.dassault-aviation.com/en/aircraft/business-jets/falcon-7x/media/gallery/images/falcon-7x-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Airbus ACJ319",
+    "max_pax": 19,
+    "purchase_price": 80000000,
+    "hire_price_per_hour": 10000,
+    "aircraft_image_url": "https://www.airbus.com/content/dam/corporate-topics/publications/airbus-acj319-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Boeing Business Jet 737",
+    "max_pax": 20,
+    "purchase_price": 80000000,
+    "hire_price_per_hour": 12000,
+    "aircraft_image_url": "https://www.boeing.com/content/dam/boeing/images/aircraft/business-jet-737/business-jet-737-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer Lineage 1000",
+    "max_pax": 19,
+    "purchase_price": 50000000,
+    "hire_price_per_hour": 9000,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/air craft/lineage-1000/lineage-1000-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Gulfstream G650",
+    "max_pax": 18,
+    "purchase_price": 70000000,
+    "hire_price_per_hour": 11000,
+    "aircraft_image_url": "https://www.gulfstream.com/content/dam/gulfstream/images/aircraft/g650/g650-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Boeing 787 Dreamliner",
+    "max_pax": 250,
+    "purchase_price": 200000000,
+    "hire_price_per_hour": 30000,
+    "aircraft_image_url": "https://www.boeing.com/content/dam/boeing/images/aircraft/787-dreamliner/787-dreamliner-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Airbus A320",
+    "max_pax": 180,
+    "purchase_price": 100000000,
+    "hire_price_per_hour": 15000,
+    "aircraft_image_url": "https://www.airbus.com/content/dam/corporate-topics/publications/a320-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna Citation X",
+    "max_pax": 8,
+    "purchase_price": 23000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-x/citation-x-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Seneca V",
+    "max_pax": 6,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 400,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/seneca-v/seneca-v-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 208 Caravan",
+    "max_pax": 9,
+    "purchase_price": 700000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/208/cessna-208-caravan-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft King Air 350",
+    "max_pax": 11,
+    "purchase_price": 7000000,
+    "hire_price_per_hour": 2000,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/king-air-350/king-air-350-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Cub",
+    "max_pax": 2,
+    "purchase_price": 150000,
+    "hire_price_per_hour": 200,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/cub/cub-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 150",
+    "max_pax": 2,
+    "purchase_price": 200000,
+    "hire_price_per_hour": 180,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/150/cessna-150-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper PA-32 Saratoga",
+    "max_pax": 6,
+    "purchase_price": 500000,
+    "hire_price_per_hour": 400,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/pa-32/pa-32-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 310",
+    "max_pax": 6,
+    "purchase_price": 700000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/310/cessna-310-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft Duchess",
+    "max_pax": 6,
+    "purchase_price": 400000,
+    "hire_price_per_hour": 350,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/duchess/duchess-exterior.jpg"
+  },
+  {
+ "aircraft_name": "Cessna 340",
+    "max_pax": 6,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/340/cessna-340-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Aztec",
+    "max_pax": 6,
+    "purchase_price": 500000,
+    "hire_price_per_hour": 400,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/aztec/aztec-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 421 Golden Eagle",
+    "max_pax": 8,
+    "purchase_price": 900000,
+    "hire_price_per_hour": 700,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/421/cessna-421-golden-eagle-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft Baron 58",
+    "max_pax": 6,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/baron-58/baron-58-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Navajo",
+    "max_pax": 8,
+    "purchase_price": 700000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/navajo/navajo-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 208B Grand Caravan",
+    "max_pax": 14,
+    "purchase_price": 900000,
+    "hire_price_per_hour": 800,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/208b/cessna-208b-grand-caravan-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Chieftain",
+    "max_pax": 9,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 700,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/chieftain/chieftain-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna Citation II",
+    "max_pax": 6,
+    "purchase_price": 3000000,
+    "hire_price_per_hour": 2000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-ii/citation-ii-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer Phenom 300",
+    "max_pax": 6,
+    "purchase_price": 8000000,
+    "hire_price_per_hour": 3000,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/aircraft/phenom-300/phenom-300-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna Citation Sovereign",
+    "max_pax": 8,
+    "purchase_price": 18000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-sovereign/citation-sovereign-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Gulfstream G450",
+    "max_pax": 14,
+    "purchase_price": 15000000,
+    "hire_price_per_hour": 6000,
+    "aircraft_image_url": "https://www.gulfstream.com/content/dam/gulfstream/images/aircraft/g450/g450-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Bombardier Learjet 60",
+    "max_pax": 8,
+    "purchase_price": 8000000,
+    "hire_price_per_hour": 4000,
+    "aircraft_image_url": "https://www.bombardier.com/content/dam/brands/bombardier/images/aircraft/learjet-60/learjet-60-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 750 Citation X",
+    "max_pax": 8,
+    "purchase_price": 23000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-x/citation-x-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Aerostar",
+    "max_pax": 6,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/aerostar/aerostar-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft 58 Baron",
+    "max_pax": 6,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/baron-58/baron-58-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 421C Golden Eagle",
+    "max_pax": 8,
+    "purchase_price": 900000,
+    "hire_price_per_hour": 700,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/421/cessna-421c-golden-eagle-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper Navajo Panther",
+    "max_pax": 8,
+    "purchase_price": 700000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/navajo-panther/navajo-panther-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 340 II",
+    "max_pax": 6,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/340/cessna-340-ii-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper PA-31 Chieftain",
+    "max_pax": 9,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 700,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/pa-31/pa-31-chieftain-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 208B Super Cargomaster",
+    "max_pax": 9,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/208b/cessna-208b-super-cargomaster-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft Baron 58P",
+    "max_pax": 6,
+    "purchase_price": 900000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/baron-58p/baron-58p-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper PA-34 Seneca",
+    "max_pax": 6,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/pa-34/pa-34-seneca-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 750 Citation X+",
+    "max_pax": 8,
+    "purchase_price": 25000000,
+    "hire_price_per_hour": 6000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-x-plus/citation-x-plus-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer Legacy 600",
+    "max_pax": 13,
+    "purchase_price": 15000000,
+    "hire_price_per_hour": 7000,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/aircraft/legacy-600/legacy-600-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 680 Citation Sovereign",
+    "max_pax": 8,
+    "purchase_price": 18000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-sovereign/citation-sovereign-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Gulfstream G550",
+    "max_pax": 14,
+    "purchase_price": 60000000,
+    "hire_price_per_hour": 8000,
+    "aircraft_image_url": "https://www.gulfstream.com/content/dam/gulfstream/images/aircraft/g550/g550-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Bombardier Global Express",
+    "max_pax": 14,
+    "purchase_price": 45000000,
+    "hire_price_per_hour": 7000,
+    "aircraft_image_url": "https://www.bombardier.com/content/dam/brands/bombardier/images/aircraft/global-express/global-express-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Airbus A330-200",
+    "max_pax": 250,
+    "purchase_price": 200000000,
+    "hire_price_per_hour": 30000,
+    "aircraft_image_url": "https://www.airbus.com/content/dam/corporate-topics/publications/a330-200-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Boeing 757-200",
+    "max_pax": 200,
+    "purchase_price": 100000000,
+    "hire_price_per_hour": 25000,
+    "aircraft_image_url": "https://www.boeing.com/content/dam/boeing/images/aircraft/757/757-200-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer ERJ-145",
+    "max_pax": 50,
+    "purchase_price": 15000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/aircraft/erj-145/erj-145-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 750 Citation X+",
+    "max_pax": 8,
+    "purchase_price": 25000000,
+    "hire_price_per_hour": 6000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-x-plus/citation-x-plus-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper PA-46 Malibu",
+    "max_pax": 6,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/malibu/malibu-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 208B Super Cargomaster",
+    "max_pax": 9,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/208b/cessna-208b-super-cargomaster-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft Baron 58P",
+    "max_pax": 6,
+    "purchase_price": 900000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/baron-58p/baron-58p-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper PA-34 Seneca",
+    "max_pax": 6,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/pa-34/pa-34-seneca-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 750 Citation X+",
+    "max_pax":  8,
+    "purchase_price": 25000000,
+    "hire_price_per_hour": 6000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-x-plus/citation-x-plus-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer Legacy 600",
+    "max_pax": 13,
+    "purchase_price": 15000000,
+    "hire_price_per_hour": 7000,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/aircraft/legacy-600/legacy-600-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 680 Citation Sovereign",
+    "max_pax": 8,
+    "purchase_price": 18000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/citation-sovereign/citation-sovereign-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Gulfstream G550",
+    "max_pax": 14,
+    "purchase_price": 60000000,
+    "hire_price_per_hour": 8000,
+    "aircraft_image_url": "https://www.gulfstream.com/content/dam/gulfstream/images/aircraft/g550/g550-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Bombardier Global Express",
+    "max_pax": 14,
+    "purchase_price": 45000000,
+    "hire_price_per_hour": 7000,
+    "aircraft_image_url": "https://www.bombardier.com/content/dam/brands/bombardier/images/aircraft/global-express/global-express-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Airbus A330-200",
+    "max_pax": 250,
+    "purchase_price": 200000000,
+    "hire_price_per_hour": 30000,
+    "aircraft_image_url": "https://www.airbus.com/content/dam/corporate-topics/publications/a330-200-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Boeing 757-200",
+    "max_pax": 200,
+    "purchase_price": 100000000,
+    "hire_price_per_hour": 25000,
+    "aircraft_image_url": "https://www.boeing.com/content/dam/boeing/images/aircraft/757/757-200-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Embraer ERJ-145",
+    "max_pax": 50,
+    "purchase_price": 15000000,
+    "hire_price_per_hour": 5000,
+    "aircraft_image_url": "https://www.embraer.com/content/dam/embraer/images/aircraft/erj-145/erj-145-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper PA-46 Malibu",
+    "max_pax": 6,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/malibu/malibu-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Cessna 208B Super Cargomaster",
+    "max_pax": 9,
+    "purchase_price": 800000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.cessna.com/content/dam/cessna/images/aircraft/208b/cessna-208b-super-cargomaster-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Beechcraft Baron 58P",
+    "max_pax": 6,
+    "purchase_price": 900000,
+    "hire_price_per_hour": 600,
+    "aircraft_image_url": "https://www.beechcraft.com/content/dam/beechcraft/images/aircraft/baron-58p/baron-58p-exterior.jpg"
+  },
+  {
+    "aircraft_name": "Piper PA-34 Seneca",
+    "max_pax": 6,
+    "purchase_price": 600000,
+    "hire_price_per_hour": 500,
+    "aircraft_image_url": "https://www.piper.com/content/dam/piper/images/aircraft/pa-34/pa-34-seneca-exterior.jpg"
+  }
+]
