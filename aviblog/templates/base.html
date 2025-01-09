@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+    rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+    {% block css %} 
+        <link href="{% static 'css/style.css' %}"
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+        <header class="header" data-header>
+
+            <div class="container">
+
+                <div class="overlay" data-overlay></div>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" alt="Ridex logo">
+                </a>
+
+                <nav class="navbar" data-navbar>
+                    <ul class="navbar-list">
+
+                    <li>
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="navbar-link" data-nav-link>About us</a>
+                    </li>
+
+                    <li>
+                        <a href="#destinations" class="navbar-link" data-nav-link>Destinations</a>
+                    </li>
+
+                    <li>
+                        <a href="#featured-plane" class="navbar-link" data-nav-link>Our Fleet</a>
+                    </li>
+
+                    <li>
+                        <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                    </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+
+                    <div class="header-contact">
+                        <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+
+                        <span class="contact-time">Open 24 Hours & 365 Days</span>
+                        </div>
+
+                        <a href="#featured-plane" class="btn" aria-labelledby="aria-label-txt">
+                        <ion-icon name="airplane"></ion-icon>
+
+                        <span id="aria-label-txt">Our Fleet</span>
+                        </a>
+
+                        <a href="#" class="btn user-btn" aria-label="Profile">
+                        <ion-icon name="person-outline"></ion-icon>
+                        </a>
+
+                        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                        <span class="three"></span>
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+    {% endblock %}
+</body>
+</html>

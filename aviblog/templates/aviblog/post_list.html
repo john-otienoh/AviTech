@@ -1,0 +1,98 @@
+{% extends "../base.html" %}
+{% load static %}
+{% block title %}Aviblog - Lets talk Aviation{% endblock %}
+{% block content%}
+    <main>
+        <article>
+
+            <section class="section hero" id="home">
+                <div class="container">
+
+                <div class="hero-content">
+                    <h2 class="h1 hero-title"><strong>Aviblog </strong>A charter plane Hiring company</h2>
+
+                    <p class="hero-text">
+                    Get a plane on the go.
+                    </p>
+                </div>
+
+                <div class="hero-banner">
+                    <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" poster="videoGIF.gif"> 
+                    <source src="./vide2.mp4" type="video/mp4">
+                    Video not supported
+                    </video>
+                </div>
+
+                <form action="" class="hero-form">
+
+                    <div class="input-wrapper">
+                    <label for="input-1" class="input-label">Plane, model, or brand</label>
+
+                    <input type="text" name="plane-model" id="input-1" class="input-field"
+                        placeholder="What plane are you looking?">
+                    </div>
+
+                    <div class="input-wrapper">
+                    <label for="input-2" class="input-label">Number of Passengers</label>
+
+                    <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Number of Passengers">
+                    </div>
+
+                    <div class="input-wrapper">
+                    <label for="input-3" class="input-label">Hours</label>
+
+                    <input type="text" name="year" id="input-3" class="input-field" placeholder="Hours for hire.">
+                    </div>
+
+                    <button type="submit" class="btn">Search</button>
+
+                </form>
+
+                </div>
+            </section>
+            <section class="about container" id="about">
+                <div class="contentBx">
+                    <h2 class="titleText">Catch up with the trending topics</h2>
+                    <p class="title-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos consequuntur voluptate dolorum totam provident ducimus cupiditate dolore doloribus repellat. Saepe ad fugit similique quis quam. Odio suscipit incidunt distinctio.
+                        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis libero pariatur ipsum suscipit voluptates aut, repellendus quos dolor autem, natus laboriosam consectetur maxime cumque, sunt magni optio? Veritatis, ea?
+                    </p>
+                    <a href="#" class="btn2">Read more</a>
+                </div>
+                <div class="imgBx">
+                    <img src="images/about.png" alt="" class="fitBg">
+                </div>
+            </section>
+            <section>
+                <div class="post-filter container">
+                    <span class="filter-item active-filter" data-filter="all">All</span>
+                    <span class="filter-item" data-filter="tech">Tech</span>
+                    <span class="filter-item" data-filter="food">Food</span>
+                    <span class="filter-item" data-filter="news">News</span>
+                </div>
+            </section>
+            <section>
+                <div class="post container">
+                    <!-- Post 1 -->
+                    {% for post in posts %}
+                        <div class="post-box tech">
+                            <img src="images/img1.jpg" alt="" class="post-img">
+                            <h2 class="category">Tech</h2>
+                            <a href="{{ post.get_absolute_url }}" class="post-title">
+                              {{ post.title }}
+                            </a>
+                            <span class="post-date">{{ post.publish }}</span>
+                            <p class="post-description">
+                              {{ post.body|truncatewords:30|linebreaks }}
+                            </p>
+                            <div class="profile">
+                                <img src="images/testi1.jpg" alt="" class="profile-img">
+                                <span class="profile-name">{{ post.author }}</span>
+                            </div>           
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+        </article>
+    </main>
+{% endblock %}
