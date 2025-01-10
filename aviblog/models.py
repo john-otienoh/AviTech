@@ -22,7 +22,7 @@ class Post(models.Model):
     body = models.TextField()
 
     class Meta:
-        """Metadata for models"""
+        """Metadata for the Post model"""
         ordering = ['-publish']
         indexes = [ models.Index(fields=['-publish']), ]
 
@@ -32,3 +32,19 @@ class Post(models.Model):
     def get_absolute_url(self):
         """Creating cannonical urls"""
         return reverse("aviblog:post_detail", args=[self.slug])
+
+class Comment(models.Model):
+    """Comment System"""
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
+    name = models.CharField(max_length=25)
+    body = models.TextField()
+    commented = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=True)
+
+    class Meta:
+        """Metadata for the Comment Model"""
+        ordering = ['commented']
+        indexes = [models.Index(fields=['commented'])]
+
+    def __str__(self):
+        return f'Comment by {self.name} on {self.post}'
