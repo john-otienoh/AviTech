@@ -72,6 +72,9 @@
                 </div>
             </section>
             <section>
+                <div class="nav-right">
+                  <a href="{% url 'aviblog:post_new' %}">+ New Blog Post</a>
+                </div>
                 <div class="post container">
                     <!-- Post 1 -->
                     {% for post in posts %}

@@ -1,8 +1,10 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, redirect
 from django.core.mail import send_mail
 from django.views.decorators.http import require_POST
 from .models import Post, Comment
 from .forms import EmailPostForm, CommentForm
+from django.utils import timezone
+from django.contrib.auth.models import User
 
 # Create your views here.
 def post_list(request):
@@ -16,6 +18,25 @@ def post_detail(request, post):
     comments = post.comments.filter(active=True)
     form = CommentForm
     return render(request, 'aviblog/post_detail.html', {'post': post, 'comments': comments, 'form': form})
+
+def post_new(request):
+    "Create New Post"
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        status = request.POST.get('status', Post.Status.DRAFT)
+        body = request.POST.get('body')
+
+        post = Post(
+            title=title,
+            status=status,
+            body=body,
+            publish=timezone.now(),
+            author=request.user
+        )
+        post.save()
+        return redirect('aviblog:post_list')
+    choices  = Post.Status.choices
+    return render(request, 'aviblog/post_new.html', {'choices': choices})
 
 def post_share(request, post_id):
     post = get_object_or_404(Post, id=post_id, status=Post.Status.PUBLISHED)

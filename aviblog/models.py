@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from django.conf import settings
+from django.utils.text import slugify
 from django.urls import reverse
 # Create your models here.
 
@@ -32,6 +33,12 @@ class Post(models.Model):
     def get_absolute_url(self):
         """Creating cannonical urls"""
         return reverse("aviblog:post_detail", args=[self.slug])
+    
+    def save(self, *args, **kwargs):
+        # Automatically generate slug from title
+        if not self.slug:  # Only set slug if it is not already set
+            self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
 
 class Comment(models.Model):
     """Comment System"""

@@ -1,0 +1,16 @@
+{% block content %}
+<h1>New post</h1>
+<form action="" method="POST">
+  {% csrf_token %}
+  <input type="text" id='title', name='title' required placeholder='Enter Blog title'/>
+  <textarea id="body" name="body" class="form-control" placeholder="Enter body text" rows="5" required></textarea>
+  <select id="status" name="status">
+    {% for value, display in choices %}
+      <option value="{{ value }}" {% if value == 'DF' %}selected{% endif %}>
+        {{ display }}
+      </option>
+    {% endfor %}
+  </select><br>
+  <input type="submit" value="Save" />
+</form>
+{% endblock content %}
