@@ -1,0 +1,29 @@
+{% extends '../base.html' %}
+
+{% block title %} Search {% endblock %}
+
+{% block css %}
+{% endblock %}
+{% block content %}
+
+<div>
+    <div>
+        {% for post in posts %}
+        <div>
+            <div>
+                <div>
+                  <h5>{{post.title}} by {{post.author}}</h5>
+                  <p>{{post.body| truncatechars:30}}</p>
+                  <a href="{{post.get_absolute_url}}">Read More</a>
+                {% if user.is_superuser %}
+                  <a href="/delete_blog_post/{{blog.slug}}/">Delete Blog</a>
+                {% endif %}
+                </div>
+              </div>
+        </div>
+        {% empty %}
+          <p>Does not match any result.</a>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

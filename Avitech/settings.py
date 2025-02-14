@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-62zc8bj4pv_l+8*+x+40j@(dbl2_bf-0move=9h_*xe=-&!*p#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['7cc8-2c0f-fe38-2114-d033-e98b-aebf-f91e-328e.ngrok-free.app', '127.0.0.1']
+ALLOWED_HOSTS = ['7cc8-2c0f-fe38-2114-d033-e98b-aebf-f91e-328e.ngrok-free.app', '127.0.0.1', 'mysite.com', 'localhost']
 
 # WhatsApp API settings
 WHATSAPP_API_TOKEN = 'Bearer EAAI7KQfphY0BOyk7iC75EgOrIUyld2m3KZAZChksJVDyus9KjjJzyuxp5ysA17y86nU2ovSfxZAVEZBucY9mWHvfgD8qjObmEsoiPICmdIiOZB5GQ1vDJwnC70E9CYE97rPS0EPrZCYQjrENeiObjJSxGBXPqUgtvz0FFyOOSqLwJVRBVi7vj4xe5kQQFQvsEl3h22cDmZBrUiwoPZADyL1uty8PC8RdTbUcKhx3p5xdexYZD'
@@ -34,24 +34,29 @@ WHATSAPP_API_TOKEN = 'Bearer EAAI7KQfphY0BOyk7iC75EgOrIUyld2m3KZAZChksJVDyus9Kjj
 VERIFY_TOKEN = 'koechbot'
 
 PHONE_NUMBER_ID = '107082732389411'
+SITE_ID = 1
 # Application definition
 
 INSTALLED_APPS = [
+    'aviblog.apps.AviblogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'django.contrib.sitemaps',
     'django.contrib.staticfiles',
 
     # Local apps
     'avibot.apps.AvibotConfig',
     'avijet.apps.AvijetConfig',
-    'aviblog.apps.AviblogConfig',
     'apis.apps.ApisConfig',
 
     # Third Party Apps
-    'rest_framework'
+    'rest_framework',
+    'taggit',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -151,3 +156,16 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL')
+
+# ACCOUNT DETAILS
+LOGIN_REDIRECT_URL = 'aviblog:post_list'
+LOGIN_URL = 'aviblog:login'
+LOGOUT_URL = 'aviblog:logout'
+
+MEDIA_URL = 'media/' 
+MEDIA_ROOT = BASE_DIR / 'media'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'aviblog.authentication.EmailAuthBackend', 
+]

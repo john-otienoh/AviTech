@@ -4,7 +4,15 @@
 {% block content%}
     <main>
         <article>
-
+            {% if request.user.is_authenticated %} 
+            Hello {{ request.user.first_name|default:request.user.username }}, 
+            <form action="{% url "aviblog:logout" %}" method="post"> 
+                <button type="submit">Logout</button> 
+                {% csrf_token %} 
+            </form> 
+            {% else %}
+            <a href="{% url "aviblog:login" %}">Log-in</a> 
+            {% endif %}
             <section class="section hero" id="home">
                 <div class="container">
 
@@ -16,36 +24,10 @@
                     </p>
                 </div>
 
-                <div class="hero-banner">
-                    <video id="video-elem" preload="auto" autoplay="true" loop="loop" muted="muted" poster="videoGIF.gif"> 
-                    <source src="./vide2.mp4" type="video/mp4">
-                    Video not supported
-                    </video>
-                </div>
-
-                <form action="" class="hero-form">
-
-                    <div class="input-wrapper">
-                    <label for="input-1" class="input-label">Plane, model, or brand</label>
-
-                    <input type="text" name="plane-model" id="input-1" class="input-field"
-                        placeholder="What plane are you looking?">
-                    </div>
-
-                    <div class="input-wrapper">
-                    <label for="input-2" class="input-label">Number of Passengers</label>
-
-                    <input type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Number of Passengers">
-                    </div>
-
-                    <div class="input-wrapper">
-                    <label for="input-3" class="input-label">Hours</label>
-
-                    <input type="text" name="year" id="input-3" class="input-field" placeholder="Hours for hire.">
-                    </div>
-
-                    <button type="submit" class="btn">Search</button>
-
+                <form method="POST" action="{% url 'aviblog:search' %}"> 
+                    {% csrf_token %}
+                    <input type="search" placeholder="Search" name="Search" id="Search" aria-label="Search">
+                    <button href="{% url 'aviblog:search'%}" type="submit">Search</button>
                 </form>
 
                 </div>
@@ -73,14 +55,23 @@
             </section>
             <section>
                 <div class="nav-right">
-                  <a href="{% url 'aviblog:post_new' %}">+ New Blog Post</a>
+                  <a href="{% url 'aviblog:post_new' %}">Add Blog Post</a>
                 </div>
+                {% if tag %} 
+                  <h2>Posts tagged with "{{ tag.name }}"</h2> 
+                {% endif %}
                 <div class="post container">
                     <!-- Post 1 -->
                     {% for post in posts %}
                         <div class="post-box tech">
                             <img src="images/img1.jpg" alt="" class="post-img">
-                            <h2 class="category">Tech</h2>
+                            <h2 class="category">
+                              {% for tag in post.tags.all %}
+                                <a href="{% url "aviblog:post_list_by_tag" tag.slug %}"> {{ tag.name }} </a>
+                                {% if not forloop.last %}, 
+                                {% endif %} 
+                              {% endfor %}
+                            </h2>
                             <a href="{{ post.get_absolute_url }}" class="post-title">
                               {{ post.title }}
                             </a>
@@ -91,7 +82,8 @@
                             <div class="profile">
                                 <img src="images/testi1.jpg" alt="" class="profile-img">
                                 <span class="profile-name">{{ post.author }}</span>
-                            </div>           
+                            </div>
+                            <p>Delete Post<a href="{% url 'aviblog:delete' post_id=post.id%}"> Delete</a>        
                         </div>
                     {% endfor %}
                 </div>

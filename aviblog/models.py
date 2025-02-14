@@ -3,6 +3,9 @@ from django.utils import timezone
 from django.conf import settings
 from django.utils.text import slugify
 from django.urls import reverse
+
+from taggit.managers import TaggableManager
+from django.conf import settings
 # Create your models here.
 
 class Post(models.Model):
@@ -21,6 +24,7 @@ class Post(models.Model):
     status = models.CharField(max_length=2, choices=Status, default=Status.DRAFT, verbose_name='Status')
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='blog_posts' )
     body = models.TextField()
+    tags = TaggableManager()
 
     class Meta:
         """Metadata for the Post model"""
@@ -55,3 +59,11 @@ class Comment(models.Model):
 
     def __str__(self):
         return f'Comment by {self.name} on {self.post}'
+
+class Profile(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    photo = models.ImageField(upload_to='users/%Y/%m/%d', blank=True)
+
+    def __str__(self):
+        return f"Profile of {self.user.username}"
+    
